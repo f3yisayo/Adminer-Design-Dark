@@ -8,10 +8,18 @@ body {
     height: 100%;
 }
 
+select optgroup option, select option, select optgroup  {
+  color: #2a2838;
+}
+
 body {
-    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Segoe UI", "HelveticaNeue", Arial, sans-serif;
     background: #312f42;
     color: #fff;
+}
+
+tr, td[align="right"] {
+  text-align: center;
 }
 
 h1 {
@@ -26,7 +34,7 @@ h2 {
     padding: 0 0 6px;
     background: none;
     border: 0;
-    font-family: "Segoe UI Light", "Segoe UI", "HelveticaNeue-Thin", Arial, sans-serif;
+    font-family: "Segoe UI", "HelveticaNeue", Arial, sans-serif;
     font-size: 46px;
     font-weight: normal;
     color: #fff;
@@ -73,11 +81,16 @@ a[href*=charsets] {
 table {
     border: 0;
     margin: 15px 0 0;
+    
+}
+
+table.nowrap {
+  max-width: 1100px;
 }
 
 th, td {
     border: 0;
-    padding: 16px;
+    padding: 8px;
     font-size: 16px;
     color: rgb(255, 255, 255);
 }
@@ -102,9 +115,10 @@ thead td,
 thead th {
     background: #2a2838;
     padding: .2em .5em;
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.11);
 }
+
 
 thead td,
 thead td a,
@@ -146,11 +160,6 @@ table.checkable tbody tr:hover th {
     background: linear-gradient(to right, #5df1dc 2px, #2a2838 2px, #2a2838 100%);
 }
 
-.js .checkable thead .checked td,
-.js .checkable thead .checked th {
-    /*background: #bfb008;*/
-}
-
 .odd th,
 .odd td {
     background: rgba(173, 173, 173, 0.02);
@@ -188,7 +197,7 @@ legend {
     padding: 10px 0;
     margin: 0;
     color: #fff;
-    font-family: "Segoe UI Semibold", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Segoe UI", "HelveticaNeue", Arial, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -225,7 +234,7 @@ p code + a:visited:hover {
 }
 
 #content {
-    margin: 0 54px 0 430px;
+    margin: 0 54px 0 330px;
     padding: 50px 0 0;
 }
 
@@ -244,14 +253,14 @@ p code + a:visited:hover {
 }
 
 #menu {
-    width: 370px;
+    width: 288px;
     border-right: 1px solid #2a2838;
     margin: 0;
     top: 0;
     background: rgb(46, 44, 62);
     bottom: 0;
     position: fixed;
-    padding: 0 30px;
+    padding: 0 0px;
     box-sizing: border-box;
 }
 
@@ -463,7 +472,7 @@ p code + a:visited:hover {
 
 #breadcrumb {
     margin: 0;
-    left: 430px;
+    left: 335px;
     background: none;
     padding: 25px 0 0;
     font-size: 12px;
@@ -542,7 +551,7 @@ table:not(#table) input[type="tel"],
 table:not(#table) input[type="url"],
 table:not(#table) input[type="text"],
 table:not(#table) input[type="search"] {
-    min-width: 280px;
+    min-width: 50px;
 }
 
 input[type=submit],
@@ -579,13 +588,6 @@ input[type=button][disabled]:hover {
     box-shadow: none;
 }
 
-input[type=submit]:hover,
-input[type=button]:hover,
-input[type=submit]:focus,
-input[type=button]:focus {
-    /*background: #4accb9;*/
-}
-
 .logout input[type=submit] {
     color: #fff;
     background: transparent;
@@ -596,15 +598,6 @@ input[type=button]:focus {
     color: #5df1dc;
     box-shadow: none;
 }
-
-/*
-input.default,
-input.default {
-	box-shadow: none;
-	background: #2e84e4;
-	color: #fff;
-	font-weight: bold;
-}*/
 
 select {
     box-sizing: border-box;
